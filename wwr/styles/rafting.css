@@ -62,7 +62,7 @@ h1 {
     text-align: center;
     opacity: .7;
     background-color: var(--accent-color);
-    color: white;
+    color: var(--font-color);
 }
 
 .hero article {
