@@ -1,8 +1,18 @@
-body{font-family: Arial, Helvetica, sans-serif;}
+:root {
+    --main-color: darkred;
+    --main-border: 1px solid black;
+}
 
-main{ max-width: 400px;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 400px;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 
@@ -13,13 +23,13 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--main-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -27,22 +37,29 @@ main img {
 p {
     padding: 0
 }
-aside{width: 300px ;
+
+aside {
+    width: 300px;
     margin: 5px;
     border: 1px dashed rgb(156 151 151/.2);
-    padding: 0 10px ;
-    background-color: rgb(136 136 184/20%) ;
-    color: black ;
+    padding: 0 10px;
+    background-color: rgb(136 136 184/20%);
+    color: black;
     font-size: 0.9rem;
 }
 
+aside h2 {
+    font-size: 20px;
+}
 
-aside h2{font-size: 20px;}
-aside img{width: 200px;
+aside img {
+    width: 200px;
     height: auto;
 }
-footer{
+
+footer {
     margin-top: 5px;
-    border-top: 1px solid black;
+    border-top: var(--main-border);
     text-align: center;
+    color: var(--main-color);
 }
